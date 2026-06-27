@@ -1,0 +1,57 @@
+---
+title: onboardingFlows | Healthie API Docs
+source_url:
+  html: https://docs.gethealthie.com/reference/2026-01-01/queries/onboardingflows/index
+  md: https://docs.gethealthie.com/reference/2026-01-01/queries/onboardingflows/index.md
+---
+
+Fetch onboarding flows collection
+
+## Arguments
+
+[`keywords` ](#argument-keywords)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`order_by` ](#argument-order-by)· [`OnboardingFlowOrderKeys`](/reference/2026-01-01/enums/onboardingfloworderkeys)
+
+[`sort_by` ](#argument-sort-by)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`after` ](#argument-after)· [`String` ](/reference/2026-01-01/scalars/string)· Returns the elements in the list that come after the specified cursor.
+
+[`before` ](#argument-before)· [`String` ](/reference/2026-01-01/scalars/string)· Returns the elements in the list that come before the specified cursor.
+
+[`first` ](#argument-first)· [`Int` ](/reference/2026-01-01/scalars/int)· Returns the first \_n\_ elements from the list.
+
+[`last` ](#argument-last)· [`Int` ](/reference/2026-01-01/scalars/int)· Returns the last \_n\_ elements from the list.
+
+## Returns
+
+[`OnboardingFlowPaginationConnection`](/reference/2026-01-01/objects/onboardingflowpaginationconnection)
+
+## Example
+
+```
+query onboardingFlows(
+  $keywords: String
+  $order_by: OnboardingFlowOrderKeys
+  $sort_by: String
+  $after: String
+  $before: String
+  $first: Int
+  $last: Int
+) {
+  onboardingFlows(
+    keywords: $keywords
+    order_by: $order_by
+    sort_by: $sort_by
+    after: $after
+    before: $before
+    first: $first
+    last: $last
+  ) {
+    edges
+    nodes
+    page_info
+    total_count
+  }
+}
+```

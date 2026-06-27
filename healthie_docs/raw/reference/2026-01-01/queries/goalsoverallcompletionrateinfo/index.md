@@ -1,0 +1,72 @@
+---
+title: goalsOverallCompletionRateInfo | Healthie API Docs
+source_url:
+  html: https://docs.gethealthie.com/reference/2026-01-01/queries/goalsoverallcompletionrateinfo/index
+  md: https://docs.gethealthie.com/reference/2026-01-01/queries/goalsoverallcompletionrateinfo/index.md
+---
+
+Overall completion percentage of goals
+
+## Arguments
+
+[`category` ](#argument-category)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`end_range` ](#argument-end-range)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`frequency_filter` ](#argument-frequency-filter)· [`String` ](/reference/2026-01-01/scalars/string)· Can be daily, weekly, or one\_time
+
+[`goal_id` ](#argument-goal-id)· [`ID`](/reference/2026-01-01/scalars/id)
+
+[`keywords` ](#argument-keywords)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`offset` ](#argument-offset)· [`Int`](/reference/2026-01-01/scalars/int)
+
+[`rel_goal_id` ](#argument-rel-goal-id)· [`String` ](/reference/2026-01-01/scalars/string)· (DEPRECATED) Use goal\_id instead as it is the correct ID
+
+[`sort_by` ](#argument-sort-by)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`start_range` ](#argument-start-range)· [`String`](/reference/2026-01-01/scalars/string)
+
+[`status_filter` ](#argument-status-filter)· [`String` ](/reference/2026-01-01/scalars/string)· Can be complete or not\_complete
+
+[`user_id` ](#argument-user-id)· [`ID`](/reference/2026-01-01/scalars/id)
+
+## Returns
+
+[`GoalOverallCompletionRateInfo`](/reference/2026-01-01/objects/goaloverallcompletionrateinfo)
+
+## Example
+
+```
+query goalsOverallCompletionRateInfo(
+  $category: String
+  $end_range: String
+  $frequency_filter: String
+  $goal_id: ID
+  $keywords: String
+  $offset: Int
+  $rel_goal_id: String
+  $sort_by: String
+  $start_range: String
+  $status_filter: String
+  $user_id: ID
+) {
+  goalsOverallCompletionRateInfo(
+    category: $category
+    end_range: $end_range
+    frequency_filter: $frequency_filter
+    goal_id: $goal_id
+    keywords: $keywords
+    offset: $offset
+    rel_goal_id: $rel_goal_id
+    sort_by: $sort_by
+    start_range: $start_range
+    status_filter: $status_filter
+    user_id: $user_id
+  ) {
+    actual_times_completed
+    percent
+    possible_times_completed
+  }
+}
+```

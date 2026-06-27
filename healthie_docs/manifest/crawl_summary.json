@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-06-27T14:26:09Z",
+  "finished_at": "2026-06-27T14:26:54Z",
+  "duration_seconds": 44,
+  "base_domain": "docs.gethealthie.com",
+  "mode": "all",
+  "refresh": false,
+  "seed_urls": [
+    "https://docs.gethealthie.com/",
+    "https://docs.gethealthie.com/guides/intro/",
+    "https://docs.gethealthie.com/guides/api-concepts/versioning/",
+    "https://docs.gethealthie.com/guides/api-concepts/changelog/",
+    "https://docs.gethealthie.com/reference/2026-01-01/"
+  ],
+  "selected_reference_version": "2026-01-01",
+  "validated_reference_versions": [
+    "2026-01-01"
+  ],
+  "counts": {
+    "discovered_urls": 2409,
+    "html_pages_visited": 62,
+    "downloaded_pages": 2407,
+    "skipped_existing": 2407,
+    "failed_urls": 2,
+    "html_fallback_pages": 0
+  },
+  "http_status_counts": {
+    "200": 61,
+    "404": 4
+  },
+  "sections": {
+    "guides": 58,
+    "reference": 2349
+  },
+  "output_dir": "healthie_docs",
+  "script_version": "v1"
+}

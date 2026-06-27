@@ -1,0 +1,375 @@
+---
+title: NotificationSetting | Healthie API Docs
+source_url:
+  html: https://docs.gethealthie.com/reference/2026-01-01/objects/notificationsetting/index
+  md: https://docs.gethealthie.com/reference/2026-01-01/objects/notificationsetting/index.md
+---
+
+An object containing the users preferences on notification
+
+## Fields
+
+[`id` ](#field-id)· [`ID!` ](/reference/2026-01-01/scalars/id)· required · The unique identifier of the setting
+
+[`marketing_communcation_preference` ](#field-marketing-communcation-preference)· [`String` ](/reference/2026-01-01/scalars/string)· An option of receiving updates and special offers \[email/sms]
+
+deprecated
+
+Use \`marketing\_communication\_preference\` instead
+
+[`marketing_communication_preference` ](#field-marketing-communication-preference)· [`String` ](/reference/2026-01-01/scalars/string)· An option of receiving updates and special offers \[email/sms]
+
+[`notification_on_module_completion` ](#field-notification-on-module-completion)· [`Boolean!` ](/reference/2026-01-01/scalars/boolean)· required · Send an email when a course module is completed
+
+[`receive_updates_and_offers` ](#field-receive-updates-and-offers)· [`Boolean!` ](/reference/2026-01-01/scalars/boolean)· required · Receive updates and special offers
+
+[`send_comment_emails` ](#field-send-comment-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever a client posts a comment
+
+[`send_comment_push` ](#field-send-comment-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get a push notification when there is a new comment
+
+[`send_course_complete_email` ](#field-send-course-complete-email)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email when a client completes a program
+
+[`send_email_before_appointment` ](#field-send-email-before-appointment)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email 5 minutes before the appointment
+
+[`send_email_on_appointment_book` ](#field-send-email-on-appointment-book)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email when a new appointment is booked
+
+[`send_email_on_appointment_cancel` ](#field-send-email-on-appointment-cancel)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email when an appointment is cancelled
+
+[`send_email_on_appointment_reschedule` ](#field-send-email-on-appointment-reschedule)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email when an appointment is rescheduled
+
+[`send_email_on_appt_request_for_anyone` ](#field-send-email-on-appt-request-for-anyone)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever client creates an appointment request for anyone in the organization
+
+[`send_email_on_appt_request_for_you` ](#field-send-email-on-appt-request-for-you)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever client creates an appointment request for you
+
+[`send_email_on_client_has_been_assigned_to_you` ](#field-send-email-on-client-has-been-assigned-to-you)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to provider when client has been assigned
+
+[`send_email_on_fax_delivery_failure` ](#field-send-email-on-fax-delivery-failure)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when fax delivery fails
+
+[`send_email_on_fax_received` ](#field-send-email-on-fax-received)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when a fax is received
+
+[`send_email_on_intake_flow_complete` ](#field-send-email-on-intake-flow-complete)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email if client completed an intake flow
+
+[`send_email_on_intake_flow_item_complete` ](#field-send-email-on-intake-flow-item-complete)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email if client completed an intake flow item
+
+[`send_email_on_intake_flow_start` ](#field-send-email-on-intake-flow-start)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email if client started an intake flow
+
+[`send_email_on_new_document` ](#field-send-email-on-new-document)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when a new document is uploaded
+
+[`send_email_on_new_folder` ](#field-send-email-on-new-folder)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when a new folder is created
+
+[`send_email_on_package_purchase` ](#field-send-email-on-package-purchase)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email when a client purchases a package
+
+[`send_email_on_scheduled_payment_failed` ](#field-send-email-on-scheduled-payment-failed)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when a scheduled payment fails
+
+[`send_email_receipt_for_subscription_payment` ](#field-send-email-receipt-for-subscription-payment)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to primary account holder when subscription payment is made
+
+[`send_emoji_email` ](#field-send-emoji-email)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when provider adds an emoji to a journal entry
+
+[`send_emoji_push` ](#field-send-emoji-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get a push notification when provider adds an emoji to a journal entry
+
+[`send_entry_emails` ](#field-send-entry-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever a client posts an entry
+
+[`send_goal_reminder_email` ](#field-send-goal-reminder-email)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to client when reminder to complete goal checked
+
+[`send_goal_reminder_push` ](#field-send-goal-reminder-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send a push notification to client when reminder to complete goal checked
+
+[`send_group_message_emails` ](#field-send-group-message-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever you get a new message in a group chat
+
+[`send_group_message_push` ](#field-send-group-message-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get a push notification when there is a new message in a group chat
+
+[`send_insurance_expiry_notifications` ](#field-send-insurance-expiry-notifications)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Sends an email to the client provider when their insurance is about to expire
+
+[`send_message_emails` ](#field-send-message-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email whenever you get a new message
+
+[`send_message_push` ](#field-send-message-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get a push notification when there is a new message
+
+[`send_new_clients_emails` ](#field-send-new-clients-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get an email when a new client is added to the organization
+
+[`send_new_insurance_added_notifications` ](#field-send-new-insurance-added-notifications)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to the client provider when client has updated their insurance information
+
+[`send_new_module_email` ](#field-send-new-module-email)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to client when new program module is available
+
+[`send_new_module_push` ](#field-send-new-module-push)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send a push notification to client when new program module is available
+
+[`send_push_before_appointment` ](#field-send-push-before-appointment)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Get a push notification 5 minutes before the appointment
+
+[`send_recurring_payment_reminder_emails` ](#field-send-recurring-payment-reminder-emails)· [`Boolean` ](/reference/2026-01-01/scalars/boolean)· Send an email to the client 24hrs before next payment is due
+
+[`updated_at` ](#field-updated-at)· [`ISO8601DateTime` ](/reference/2026-01-01/scalars/iso8601datetime)· The date and time of the last update of the setting
+
+[`user` ](#field-user)· [`User` ](/reference/2026-01-01/objects/user)· The owner of the notification setting
+
+## Used By
+
+[`Query.notificationSetting`](/reference/2026-01-01/queries/notificationsetting)
+
+[`User.notification_setting`](/reference/2026-01-01/objects/user)
+
+[`updateNotificationSettingPayload.notificationSetting`](/reference/2026-01-01/objects/updatenotificationsettingpayload)
+
+## Definition
+
+```
+"""
+An object containing the users preferences on notification
+"""
+type NotificationSetting {
+  """
+  The unique identifier of the setting
+  """
+  id: ID!
+
+
+  """
+  An option of receiving updates and special offers [email/sms]
+  """
+  marketing_communcation_preference: String
+    @deprecated(reason: "Use `marketing_communication_preference` instead")
+
+
+  """
+  An option of receiving updates and special offers [email/sms]
+  """
+  marketing_communication_preference: String
+
+
+  """
+  Send an email when a course module is completed
+  """
+  notification_on_module_completion: Boolean!
+
+
+  """
+  Receive updates and special offers
+  """
+  receive_updates_and_offers: Boolean!
+
+
+  """
+  Get an email whenever a client posts a comment
+  """
+  send_comment_emails: Boolean
+
+
+  """
+  Get a push notification when there is a new comment
+  """
+  send_comment_push: Boolean
+
+
+  """
+  Send an email when a client completes a program
+  """
+  send_course_complete_email: Boolean
+
+
+  """
+  Send an email 5 minutes before the appointment
+  """
+  send_email_before_appointment: Boolean
+
+
+  """
+  Send an email when a new appointment is booked
+  """
+  send_email_on_appointment_book: Boolean
+
+
+  """
+  Send an email when an appointment is cancelled
+  """
+  send_email_on_appointment_cancel: Boolean
+
+
+  """
+  Send an email when an appointment is rescheduled
+  """
+  send_email_on_appointment_reschedule: Boolean
+
+
+  """
+  Get an email whenever client creates an appointment request for anyone in the organization
+  """
+  send_email_on_appt_request_for_anyone: Boolean
+
+
+  """
+  Get an email whenever client creates an appointment request for you
+  """
+  send_email_on_appt_request_for_you: Boolean
+
+
+  """
+  Send an email to provider when client has been assigned
+  """
+  send_email_on_client_has_been_assigned_to_you: Boolean
+
+
+  """
+  Get an email when fax delivery fails
+  """
+  send_email_on_fax_delivery_failure: Boolean
+
+
+  """
+  Get an email when a fax is received
+  """
+  send_email_on_fax_received: Boolean
+
+
+  """
+  Get an email if client completed an intake flow
+  """
+  send_email_on_intake_flow_complete: Boolean
+
+
+  """
+  Get an email if client completed an intake flow item
+  """
+  send_email_on_intake_flow_item_complete: Boolean
+
+
+  """
+  Get an email if client started an intake flow
+  """
+  send_email_on_intake_flow_start: Boolean
+
+
+  """
+  Get an email when a new document is uploaded
+  """
+  send_email_on_new_document: Boolean
+
+
+  """
+  Get an email when a new folder is created
+  """
+  send_email_on_new_folder: Boolean
+
+
+  """
+  Send an email when a client purchases a package
+  """
+  send_email_on_package_purchase: Boolean
+
+
+  """
+  Get an email when a scheduled payment fails
+  """
+  send_email_on_scheduled_payment_failed: Boolean
+
+
+  """
+  Send an email to primary account holder when subscription payment is made
+  """
+  send_email_receipt_for_subscription_payment: Boolean
+
+
+  """
+  Get an email when provider adds an emoji to a journal entry
+  """
+  send_emoji_email: Boolean
+
+
+  """
+  Get a push notification when provider adds an emoji to a journal entry
+  """
+  send_emoji_push: Boolean
+
+
+  """
+  Get an email whenever a client posts an entry
+  """
+  send_entry_emails: Boolean
+
+
+  """
+  Send an email to client when reminder to complete goal checked
+  """
+  send_goal_reminder_email: Boolean
+
+
+  """
+  Send a push notification to client when reminder to complete goal checked
+  """
+  send_goal_reminder_push: Boolean
+
+
+  """
+  Get an email whenever you get a new message in a group chat
+  """
+  send_group_message_emails: Boolean
+
+
+  """
+  Get a push notification when there is a new message in a group chat
+  """
+  send_group_message_push: Boolean
+
+
+  """
+  Sends an email to the client provider when their insurance is about to expire
+  """
+  send_insurance_expiry_notifications: Boolean
+
+
+  """
+  Get an email whenever you get a new message
+  """
+  send_message_emails: Boolean
+
+
+  """
+  Get a push notification when there is a new message
+  """
+  send_message_push: Boolean
+
+
+  """
+  Get an email when a new client is added to the organization
+  """
+  send_new_clients_emails: Boolean
+
+
+  """
+  Send an email to the client provider when client has updated their insurance information
+  """
+  send_new_insurance_added_notifications: Boolean
+
+
+  """
+  Send an email to client when new program module is available
+  """
+  send_new_module_email: Boolean
+
+
+  """
+  Send a push notification to client when new program module is available
+  """
+  send_new_module_push: Boolean
+
+
+  """
+  Get a push notification 5 minutes before the appointment
+  """
+  send_push_before_appointment: Boolean
+
+
+  """
+  Send an email to the client 24hrs before next payment is due
+  """
+  send_recurring_payment_reminder_emails: Boolean
+
+
+  """
+  The date and time of the last update of the setting
+  """
+  updated_at: ISO8601DateTime
+
+
+  """
+  The owner of the notification setting
+  """
+  user: User
+}
+```
